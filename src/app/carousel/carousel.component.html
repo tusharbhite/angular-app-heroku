@@ -1,0 +1,226 @@
+
+
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Only Automatic Image Slider Demo</title>
+<link href="http://www.cssscript.com/wp-includes/css/sticky.css" rel="stylesheet" type="text/css">
+<style>
+/* reset */
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block }
+
+body { line-height: 1 }
+
+ol, ul { list-style: none }
+
+blockquote, q { quotes: none }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+/**
+ * Base
+ */
+
+body {
+  font-size: 100%;
+  background: #f1f1f1;
+}
+
+/* Fallback for hidden attribute */
+
+hidden { display: none; }
+
+/**
+ * Keyframes for autoplay
+ */
+@-webkit-keyframes 
+autoplay {   /* position of the first slide */
+  0% {
+ left: 0;
+}
+  /* position of the second slide */
+  25% {
+ left: -40.625rem;
+}
+  /* position of the third slide */
+  50% {
+ left: -81.25rem;
+}
+  /* position of the fourth slide */
+  100% {
+ left: -121.875rem;
+}
+}
+@keyframes 
+autoplay {   /* position of the first slide */
+  0% {
+ left: 0;
+}
+  /* position of the second slide */
+  25% {
+ left: -40.625rem;
+}
+  /* position of the third slide */
+  50% {
+ left: -81.25rem;
+}
+  /* position of the fourth slide */
+  100% {
+ left: -121.875rem;
+}
+}
+
+/**
+ * Slider
+ */
+
+.slider {
+  position: relative;
+  /* top margin is for purposes of demo */
+  margin-top: 3rem;
+  margin-right: auto;
+  margin-left: auto;
+  overflow: hidden;
+  width: 40.625rem;
+  height: 26.25rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.slider__list {
+  position: absolute;
+  left: 0;
+  width: 162.5rem;
+}
+
+.slider__slide { float: left; }
+
+/**
+ * Slider control
+ */
+
+.slider__control {
+  margin-right: auto;
+  margin-left: auto;
+  width: 4.5rem;
+  font-family: sans-serif;
+}
+
+.slider__control label {
+  position: relative;
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 4.5rem;
+  height: 2rem;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: transparent;
+  background: #ddd;
+  border-radius: 2rem;
+  cursor: pointer;
+  -webkit-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+
+.slider__control label:before {
+  content: "autoplay";
+  position: absolute;
+  top: 2.5rem;
+  left: 0;
+  color: #333;
+ font-size: .95rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.slider__control label:after {
+  content: "";
+  position: absolute;
+ top: .25rem;
+ left: .25rem;
+  display: block;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 2rem;
+  background: #fff;
+  -webkit-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slider > .slider__list {
+  -webkit-animation-name: autoplay;
+  animation-name: autoplay;
+  /* This will change the time it takes to move to next slide */
+  -webkit-animation-duration: 10s;
+  animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.slider__switch:checked + .slider + .slider__control > label { background: #455a64; }
+
+.slider__switch:checked + .slider + .slider__control > label:after { left: 2.75rem; }
+</style>
+</head>
+
+<body>
+
+  <script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* CSSScript Demo Page */
+google_ad_slot = "3025259193";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+      <script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+
+<input id="sliderSwitch" class="slider__switch" type="checkbox" name="sliderSwitch" hidden />
+<div class="slider">
+  <ul class="slider__list">
+    <li class="slider__slide"><img src="/assets/rookie.jpeg" alt="Slide 1" /></li>
+    <li class="slider__slide"><img src="/assets/insta.jpeg" alt="Slide 2" /></li>
+    <li class="slider__slide"><img src="/assets/rookie.jpeg" alt="Slide 1" /></li>
+    <li class="slider__slide"><img src="/assets/insta.jpeg" alt="Slide 2" /></li>
+ 
+  </ul>
+</div>
+<div class="slider__control">
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+

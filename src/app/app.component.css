@@ -6,15 +6,36 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
 @media only screen and (max-width: 600px) {#main {margin-left: 0}}
+@media only screen and (max-width: 400px) {
+
+    .w3-jumbo{
+        font-size: 45px !important;
+    }
+}
+
+
+@media (min-width:1025px) { 
+    #contact{
+        font-size: 20px;
+    display: inline-flex;
+    width: fit-content;
+    }
+    
+    
+     }
+
+     @media (min-width:300px) and (max-width:768px){     
+        #contact{
+            transform: translate(13%,0%) !important;
+            
+        }
+          
+         }     
 
 .hero-image {
     height: 30%;
     width:100%;  
-    filter: opacity(30%);
-    filter: blur(2px);
     }
-    .hero-image:hover{
-        filter: opacity(100%);
 
 
-    }
+ 

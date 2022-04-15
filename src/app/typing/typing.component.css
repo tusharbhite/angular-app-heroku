@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:700,300);
+@media only screen and (max-width: 400px) {
+  .frame {
+    width :337px !important; 
+    position: relative !important;
+    left: 38% !important;
+    right: 90% !important;
+    height: 70px !important;
+  }
+
+  .textParent{
+	width: 320px !important;
+  }
+
+} 
+
+ .frame {     
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 width: 600px;
+	 height: 100px;
+	 margin-top: -100px;
+	 margin-left: -240px;
+	 border-radius: 2px;
+	 box-shadow: 4px 8px 16px 0 rgba(0,0,0,0.1);
+	 overflow: hidden;
+	 background: #f39c12;
+	 color: #333;
+	 font-family: 'Open Sans', Helvetica, sans-serif;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+}
+ .center {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 transform: translate(-50%,-50%);
+}
+ .textParent {
+	 font-size: 23px;
+	 color: white;
+	 display: flex;
+	 flex-direction: row;
+	 align-items: center;
+	 justify-content: center;
+	 -moz-column-gap: 10px;
+	 column-gap: 10px;
+	 text-shadow: 1px 1px 2px #00000099;
+	 font-weight: 400;
+	 height: 35px;
+	 overflow: hidden;
+}
+ .textParent .textStatic {
+	 height: 100%;
+	 line-height: 35px;
+}
+ .textParent .textDynamic {
+	 font-weight: 700;
+	 height: 100%;
+	 animation-name: slide;
+	 animation-duration: 6s;
+	 animation-iteration-count: infinite;
+	 animation-timing-function: ease-in-out;
+}
+ .textParent .textDynamic div {
+	 height: 100%;
+	 line-height: 35px;
+}
+ @keyframes slide {
+	 0%, 20% {
+		 transform: translateY(0px);
+	}
+	 20%, 40% {
+		 transform: translateY(-35px);
+	}
+	 40%, 60% {
+		 transform: translateY(-70px);
+	}
+	 60%, 80% {
+		 transform: translateY(-105px);
+	}
+	 80%, 90% {
+		 transform: translateY(-140px);
+	}
+	 100% {
+		 transform: translateY(-300px);
+	}
+}
+ 

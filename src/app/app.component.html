@@ -1,9 +1,9 @@
+
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="./app.component.css">
-
 <!-- Icon Bar (Sidebar - hidden on small screens) -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
@@ -42,8 +42,16 @@
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
     <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Tushar Bhite.</h1>
-    <p>Full Stack Developer, AEM Developer, Coder</p>
+    <p style="height : 200px;width: 600px;">
+      <app-typing></app-typing>
+    
+    </p>
+  
+
   </header>
+
+  <app-loader></app-loader>
+
   <div >
 <img class="img-responsive hero-image" src="/assets/desk-dp.jpeg" alt="">
 
@@ -82,7 +90,7 @@
     </div>
    <br>
     
-    <div class="w3-row w3-center w3-padding-16 w3-section w3-light-grey">
+    <div id= "gray-bg-c" class=" w3-row w3-dark-grey w3-center w3-padding-16 w3-section ">
       <div class="w3-quarter w3-section">
         <span class="w3-xlarge">20+</span><br>
         Personal Projects
@@ -91,12 +99,22 @@
         <span class="w3-xlarge">100+</span><br>
         DSA Questions Solved
       </div>
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">1.5+</span><br>
+        Years of Experience
+      </div>
+
+      <div class="w3-quarter w3-section">
+        <span class="w3-xlarge">4+</span><br>
+        Open Source Contributions
+      </div>
       
     </div>
-
-    <button class="w3-button w3-light-grey w3-padding-large w3-section">
+    <a href="https://docs.google.com/document/d/15D1UE9MZmCynP5RJ1z_7nMgkg_065mmCT7s56I7BuKc/edit?usp=sharing">
+    <button class="w3-button w3-dark-grey w3-padding-large w3-section">
       <i class="fa fa-download"></i> Download Resume
     </button>
+  </a>
     
     
   <!-- End About Section -->
@@ -151,60 +169,83 @@
   <!-- End Portfolio Section -->
   </div>
 
+  <app-accordion></app-accordion>
+  <app-carousel></app-carousel>
+
+
   <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-dark-grey">Contact Me</h2>
+  <h2 class="w3-text-dark-grey">Contact Me</h2>
+  <div class=" w3-content w3-text-grey" id="contact">
+    
     <hr style="width:200px" class="w3-opacity">
 
-    <div class="w3-section">
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 
-        <a href="tel:7776050128">Call: 777-6050-128</a>
+    <div id="contact" class="w3-section">
+
+      <p style="color: black;"> <i class="fa fa-phone fa-fw  w3-xxlarge w3-margin-right"></i> 
+        <a href="tel:7776050128">Mobile&nbsp; &nbsp;</a>
       </p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> 
-        <a href = "mailto:tushbhite@gmail.com?subject = Feedback&body = Message">
-          Email: tushbhite@gmail.com
-          </a>
+      <p style="color: rgb(177, 107, 22);"> <i class="fa fa-envelope fa-fw  w3-xxlarge w3-margin-right"> </i> 
+        <a href = "mailto:tushbhite@gmail.com?subject = Feedback&body = Message">E-mail &nbsp;&nbsp;</a>
           
         </p>
-        <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> 
-          <a href="https://wa.me/7776050128" target="_blank">Whatsapp</a>
+        <p style="color: rgb(1, 131, 1);"><i class="fa fa-whatsapp fa-fw  w3-xxlarge w3-margin-right "></i> 
+          <a href="https://wa.me/7776050128" target="_blank">Whatsapp&nbsp;</a>
         </p>
 
-        <p><i class="fa fa-instagram fa-fw w3-text-white w3-xxlarge w3-margin-right"></i>     
+        <p style="color: #e95950;"><i class="fa fa-instagram fa-fw  w3-xxlarge w3-margin-right"></i>     
            
 
-          <a  href="https://www.instagram.com/b.tushar.99/" target="_blank"></a>
+          <a  href="https://www.instagram.com/b.tushar.99/" target="_blank">Instagram&nbsp;</a>
         </p>
+
+
     </div><br>
-    <p>Let's get in touch. Send me a message:</p>
 
 
-
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> SEND MESSAGE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
+    <!-- End Contact Section -->
   </div>
+
+<!-- Tech Profiles Section-->
+
+<h2 class="w3-text-dark-grey">Tech Career Profiles</h2>
+  <div class=" w3-content w3-text-grey" id="contact">
+    
+    <hr style="width:200px" class="w3-opacity">
+
+    <div id="contact" class="w3-section">
+      <p style="color: red;"><i class=" fa fa-google fa-fw w3-xxlarge w3-margin-right "><!--<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/28px-Google_%22G%22_Logo.svg.png">--></i> 
+        <a href="https://scholar.google.com/citations?user=IRrYcPIAAAAJ&hl=en" target="_blank">Google&nbsp;</a>
+      </p>
+
+      <p style="color: blue;"><i class="fa fa-linkedin   w3-xxlarge w3-margin-right"></i>     
+           
+        <a  href="https://www.linkedin.com/in/tushar-bhite-tushar-bhite/" target="_blank">Linkedin &nbsp;</a>
+      </p>
+      <p style="color: black;"><i class="fa fa-github fa-fw  w3-xxlarge w3-margin-right"></i>     
+
+        <a  href="https://github.com/tusharbhite" target="_blank">GitHub &nbsp;</a>
+      </p>
+      <p style="color: orange;"> <i class="fa fa-envelope fa-fw  w3-xxlarge w3-margin-right"> </i> 
+        <a href = "https://leetcode.com/toosharpbhite/">Leet-Code &nbsp;&nbsp;</a>
+          
+        </p>
+       
+
+    
+
+
+    </div><br>
+
+
+    <!-- End Contact Section -->
+  </div>
+
+
   
     <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <!-- End footer -->
-  </footer>
+
 
 <!-- END PAGE CONTENT -->
 </div>
+
+<app-thanks></app-thanks>
