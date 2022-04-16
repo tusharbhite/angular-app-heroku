@@ -7,6 +7,9 @@ import { LoaderComponent } from './loader/loader.component';
 import { ThanksComponent } from './thanks/thanks.component';
 import { AccordionComponent } from './accordion/accordion.component';
 import { CarouselComponent } from './carousel/carousel.component';
+import { CardsComponent } from './cards/cards.component';
+import { CardTwoComponent } from './card-two/card-two.component';
+import { TypewriterComponent } from './typewriter/typewriter.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { CarouselComponent } from './carousel/carousel.component';
     LoaderComponent,
     ThanksComponent,
     AccordionComponent,
-    CarouselComponent
+    CarouselComponent,
+    CardsComponent,
+    CardTwoComponent,
+    TypewriterComponent
   ],
   imports: [
     BrowserModule

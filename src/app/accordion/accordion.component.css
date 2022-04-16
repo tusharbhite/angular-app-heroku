@@ -24,7 +24,7 @@ input {
     flex: 1;
 }
 .row .col:last-child {
-    margin-left: 1em;
+    margin-left: 0em;
 }
 /* Accordion styles */
 .tabs {

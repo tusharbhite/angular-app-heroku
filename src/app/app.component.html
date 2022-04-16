@@ -8,17 +8,17 @@
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
   <img src="/assets/logo.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
+  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
-    <p>About</p>
+    <p>ABOUT</p>
   </a>
   <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-user w3-xxlarge"></i>
-    <p>Skills</p>
+    <p>SKILLS</p>
   </a>
   <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-eye w3-xxlarge"></i>
-    <p>Career History</p>
+    <p>CAREER</p>
   </a>
   <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
     <i class="fa fa-envelope w3-xxlarge"></i>
@@ -29,9 +29,9 @@
 <!-- Navbar on small screens (Hidden on medium and large screens) -->
 <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
   <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">About</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">Skills</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">Career</a>
+    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+    <a href="#skills" class="w3-bar-item w3-button" style="width:25% !important">SKILLS</a>
+    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">CAREER</a>
     <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
   </div>
 </div>
@@ -41,7 +41,7 @@
 ">
   <!-- Header/Home -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Tushar Bhite.</h1>
+    <h1 class="w3-jumbo"><span class="w3-hide-small">Hi there, I'm</span> Tushar Bhite</h1>
     <p style="height : 200px;width: 600px;">
       <app-typing></app-typing>
     
@@ -58,12 +58,13 @@
     </div>
 
   <!-- About Section -->
+  <div id="about"></div>
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
     <h2 class="w3-text-dark-grey">Tushar Bhite</h2>
     <hr style="width:200px" class="w3-opacity">
     <p>Seeking a position in the organisation that will allow me to utilise and apply my skills. I am very much eager to contribute my creativity and hard work towards the success of the organisation and to the growth of the fast developing field. I love learning new technologies, So i would be extremely grateful if i get an opportunity to learn about their. If you have any offer please feel free to contact.
     </p>
-    <h3 class="w3-padding-16 w3-text-dark-grey">My Skills</h3>
+    <h3 id="skills" class="w3-padding-16 w3-text-dark-grey">My Skills</h3>
     <p class="w3-wide">Full Stack Development</p>
     <div class="w3-white">
       <div class="w3-dark-grey" style="height:100%;width:100%">
@@ -120,9 +121,17 @@
   <!-- End About Section -->
   </div>
   
+
+
+
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
+  <div class=" w3-content" id="photos">
     <h2 class="w3-text-dark-gray">My Experience</h2>
+
+
+
+
+
     <hr style="width:200px" class="w3-opacity">
 
     <div class="w3-white">
@@ -160,6 +169,32 @@
       </div>
     </div>
 
+    <!-- Tech Profiles Section-->
+
+<h2 class="contact-l w3-padding-16 w3-text-dark-grey">Tech Career Profiles</h2>
+
+
+
+
+<div class="row w3-content " >
+  <div class="column"  >
+    <a href="https://scholar.google.com/citations?user=IRrYcPIAAAAJ&hl=en" target="_blank">      <p style="color: red;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/40px-Google_%22G%22_Logo.svg.png">
+    </p> </a>
+  </div>
+  <div class="column" >
+    <a  href="https://www.linkedin.com/in/tushar-bhite-tushar-bhite/" target="_blank">      <p style="color: blue;"><img class="logo-img" width="40" height="40" src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Linkedin.svg">     
+    </p></a>
+  </div>
+  <div class="column" >
+    <a  href="https://github.com/tusharbhite" target="_blank">      <p style="color: black;"><img width="40" height="40" src="https://cdn-icons-png.flaticon.com/512/25/25231.png">     
+    </p> </a>
+  </div>
+  <div class="column" >
+    <a href = "https://leetcode.com/toosharpbhite/"> <p style="color: orange;"> <img width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png"> 
+    </p></a>
+  </div>
+</div>
+
 
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
@@ -168,78 +203,42 @@
     </div>
   <!-- End Portfolio Section -->
   </div>
+  <h3 id="as" class=" label-d w3-padding-16 w3-text-dark-grey">Project Details</h3>
 
   <app-accordion></app-accordion>
+  <br>
+  <h3 id="sd" class="label-d w3-padding-16 w3-text-dark-grey">Awards and Achievements</h3>
+
   <app-carousel></app-carousel>
 
 
+
   <!-- Contact Section -->
-  <h2 class="w3-text-dark-grey">Contact Me</h2>
-  <div class=" w3-content w3-text-grey" id="contact">
-    
-    <hr style="width:200px" class="w3-opacity">
+  <h2 id="contact" class="contact-l w3-padding-16 w3-text-dark-grey"></h2>
+  <app-typewriter></app-typewriter>
 
-    <div id="contact" class="w3-section">
-
-      <p style="color: black;"> <i class="fa fa-phone fa-fw  w3-xxlarge w3-margin-right"></i> 
-        <a href="tel:7776050128">Mobile&nbsp; &nbsp;</a>
-      </p>
-      <p style="color: rgb(177, 107, 22);"> <i class="fa fa-envelope fa-fw  w3-xxlarge w3-margin-right"> </i> 
-        <a href = "mailto:tushbhite@gmail.com?subject = Feedback&body = Message">E-mail &nbsp;&nbsp;</a>
-          
-        </p>
-        <p style="color: rgb(1, 131, 1);"><i class="fa fa-whatsapp fa-fw  w3-xxlarge w3-margin-right "></i> 
-          <a href="https://wa.me/7776050128" target="_blank">Whatsapp&nbsp;</a>
-        </p>
-
-        <p style="color: #e95950;"><i class="fa fa-instagram fa-fw  w3-xxlarge w3-margin-right"></i>     
-           
-
-          <a  href="https://www.instagram.com/b.tushar.99/" target="_blank">Instagram&nbsp;</a>
-        </p>
-
-
-    </div><br>
-
-
-    <!-- End Contact Section -->
+  <div class="row w3-content w3" >
+    <div class="column" >
+      <a href="tel:7776050128">      <p  style="color: green;"> <img class="vibrate" width="50" height="50" src="https://i.pinimg.com/originals/3d/63/ff/3d63ff2d7e69e2365fc31f08cd084de5.png"> 
+      </p> </a>
+    </div>
+    <div class="column" >
+      <a href = "mailto:tushbhite@gmail.com?subject = Feedback&body = Message">      <p  style="color: rgb(177, 107, 22);"> <img class="vibrate" width="40" height="35" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Gmail_icon_(2020).svg/40px-Gmail_icon_(2020).svg.png"> 
+      </p></a>
+    </div>
+    <div class="column" >
+      <a href="https://wa.me/7776050128" target="_blank">        <p style="color: rgb(1, 131, 1);"><img class="vibrate" width="50" height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/60px-WhatsApp.svg.png">
+      </p></a>
+    </div>
+    <div class="column" >
+      <a  href="https://www.instagram.com/b.tushar.99/" target="_blank">        <p class="img-logo" style="color: #e95950;"><img class="vibrate" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/40px-Instagram_logo_2016.svg.png">    
+      </p></a>
+    </div>
   </div>
-
-<!-- Tech Profiles Section-->
-
-<h2 class="w3-text-dark-grey">Tech Career Profiles</h2>
-  <div class=" w3-content w3-text-grey" id="contact">
-    
-    <hr style="width:200px" class="w3-opacity">
-
-    <div id="contact" class="w3-section">
-      <p style="color: red;"><i class=" fa fa-google fa-fw w3-xxlarge w3-margin-right "><!--<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/28px-Google_%22G%22_Logo.svg.png">--></i> 
-        <a href="https://scholar.google.com/citations?user=IRrYcPIAAAAJ&hl=en" target="_blank">Google&nbsp;</a>
-      </p>
-
-      <p style="color: blue;"><i class="fa fa-linkedin   w3-xxlarge w3-margin-right"></i>     
-           
-        <a  href="https://www.linkedin.com/in/tushar-bhite-tushar-bhite/" target="_blank">Linkedin &nbsp;</a>
-      </p>
-      <p style="color: black;"><i class="fa fa-github fa-fw  w3-xxlarge w3-margin-right"></i>     
-
-        <a  href="https://github.com/tusharbhite" target="_blank">GitHub &nbsp;</a>
-      </p>
-      <p style="color: orange;"> <i class="fa fa-envelope fa-fw  w3-xxlarge w3-margin-right"> </i> 
-        <a href = "https://leetcode.com/toosharpbhite/">Leet-Code &nbsp;&nbsp;</a>
-          
-        </p>
-       
-
-    
+ 
 
 
-    </div><br>
-
-
-    <!-- End Contact Section -->
-  </div>
-
+  
 
   
     <!-- Footer -->
@@ -247,5 +246,6 @@
 
 <!-- END PAGE CONTENT -->
 </div>
+<div class="cl"></div>
 
 <app-thanks></app-thanks>

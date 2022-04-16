@@ -2,6 +2,9 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 .w3-row-padding img {margin-bottom: 12px}
 /* Set the width of the sidebar to 120px */
 .w3-sidebar {width: 120px;background: #222;}
+.contact-l{
+    transform: translate(0%,0%);
+}
 /* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
 #main {margin-left: 120px}
 /* Remove margins from "page content" on small screens */
@@ -13,6 +16,24 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     }
 }
 
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 @media (min-width:1025px) { 
     #contact{
@@ -20,17 +41,38 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     display: inline-flex;
     width: fit-content;
     }
+    .label-d{
+        transform: translate(11%,0%);
+    }
     
     
      }
+     .w3-button{
+        width: 100%;
+    }
 
      @media (min-width:300px) and (max-width:768px){     
         #contact{
             transform: translate(13%,0%) !important;
             
         }
+        
+
+       
           
-         }     
+         }    
+         
+         @media  (max-width:400px){     
+           
+            .w3-bar{
+                width: 63%;
+                position: fixed;
+                top: 0;
+            }
+    
+           
+              
+             } 
 
 .hero-image {
     height: 30%;
@@ -38,4 +80,13 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     }
 
 
- 
+    .vibrate{
+        
+            animation: rotation 2s infinite linear; 
+          
+          
+        
+      }
+      @keyframes rotation {
+        100%{ transform:rotatey(360deg) }
+      }

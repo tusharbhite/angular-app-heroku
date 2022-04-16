@@ -1,0 +1,16 @@
+@media only screen and (max-width: 400px) {
+   .slider{
+       width: 22.9rem !important;
+       height: 450px !important;
+   }
+   .slider-body{
+    height: 510px;
+   }
+  
+
+  }
+
+  .logo-img{
+      width: 40px;
+      height: 40px;
+  }

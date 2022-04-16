@@ -43,7 +43,6 @@ table {
 
 body {
   font-size: 100%;
-  background: #f1f1f1;
 }
 
 /* Fallback for hidden attribute */
@@ -101,8 +100,8 @@ autoplay {   /* position of the first slide */
   margin-right: auto;
   margin-left: auto;
   overflow: hidden;
-  width: 40.625rem;
-  height: 26.25rem;
+  width: 65.625rem;
+  height: 31.25rem;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
 
@@ -112,7 +111,8 @@ autoplay {   /* position of the first slide */
   width: 162.5rem;
 }
 
-.slider__slide { float: left; }
+.slider__slide { float: left;
+width: 700px; }
 
 /**
  * Slider control
@@ -186,7 +186,7 @@ autoplay {   /* position of the first slide */
 </style>
 </head>
 
-<body>
+<body class="slider-body">
 
   <script type="text/javascript"><!--
 google_ad_client = "ca-pub-2783044520727903";
@@ -201,13 +201,22 @@ src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 
 <input id="sliderSwitch" class="slider__switch" type="checkbox" name="sliderSwitch" hidden />
-<div class="slider">
+<div class="slider w3-dark-gray">
   <ul class="slider__list">
-    <li class="slider__slide"><img src="/assets/rookie.jpeg" alt="Slide 1" /></li>
+    <li class="slider__slide" ><app-cards></app-cards></li>
+    <li class="slider__slide" ><app-card-two></app-card-two></li>
+    <li class="slider__slide" ><app-cards></app-cards></li>
+    <li class="slider__slide" ><app-card-two></app-card-two></li>
+
+
+
+
+
+
+    <!--<li class="slider__slide"><img src="/assets/rookie.jpeg" alt="Slide 1" /></li>
     <li class="slider__slide"><img src="/assets/insta.jpeg" alt="Slide 2" /></li>
     <li class="slider__slide"><img src="/assets/rookie.jpeg" alt="Slide 1" /></li>
-    <li class="slider__slide"><img src="/assets/insta.jpeg" alt="Slide 2" /></li>
- 
+    -->
   </ul>
 </div>
 <div class="slider__control">
